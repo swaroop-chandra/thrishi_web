@@ -1,13 +1,12 @@
 import styles from "../../styles/Navigation.module.css";
 import Link from "next/Link";
-import { useLocation, useParams } from "react-router-dom";
-import { useState } from "react";
+// import { useLocation, useParams } from "react-router-dom";
+// import { useState } from "react";
 
 export default function Navigation() {
-  const urlData = useLocation();
+  // const urlData = useLocation();
   // const [first, setfirst] = useState(second);
 
-  console.log(urlData, "response");
   return (
     <div className="flex flex-row bg-gradient-to-r from-black to-slate-100 bg-blend-multiply drop-shadow-md ">
       <div className="grow"></div>
