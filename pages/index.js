@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home - TitleMetaNextjs</title>
+        <title>Thishi | Home</title>
+
         <meta name="description" content="Meta description for the Home page" />
       </Head>
       <div>

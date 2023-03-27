@@ -4,7 +4,8 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>About - TitleMetaNextjs</title>
+        <title>Thishi | About Us</title>
+
         <meta
           name="description"
           content="Meta description for the About page"
