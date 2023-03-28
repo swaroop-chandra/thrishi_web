@@ -19,7 +19,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/images/nav/smThishi.jpeg" />
       </Head>
       <Navigation />
-      <Component {...pageProps} />
+      <div className="pt-20">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }

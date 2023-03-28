@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Landing from "../components/home/Landing";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Meta description for the Home page" />
       </Head>
       <div>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <Landing />
       </div>
     </div>
   );
