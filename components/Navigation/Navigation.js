@@ -129,7 +129,7 @@ export default function Navigation() {
             })}
             <li className="pt-4">
               <Link href="/lets_talk">
-                <LetsTalk />
+                <LetsTalk width={"145px"} height={"32px"} text={"Let's Talk"} />
               </Link>
             </li>
           </ul>

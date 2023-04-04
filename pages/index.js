@@ -1,4 +1,6 @@
 import Head from "next/head";
+import HomeAboutUs from "../components/home/HomeAboutUs";
+import HomeWhy from "../components/home/HomeWhy";
 import Landing from "../components/home/Landing";
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
       </Head>
       <div>
         <Landing />
+        <HomeAboutUs />
+        <HomeWhy />
       </div>
     </div>
   );
