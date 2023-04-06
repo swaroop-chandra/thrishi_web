@@ -4,7 +4,10 @@ body {
   margin: 0;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
+}
 
+body {
+  background: #FEFEFE;
 }
 
 a {
@@ -41,3 +44,9 @@ button {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input::placeholder {
+  color: red;
+  opacity: 1;
+  /* Firefox */
+}

@@ -2,6 +2,7 @@ import Head from "next/head";
 import HomeAboutUs from "../components/home/HomeAboutUs";
 import HomeWhy from "../components/home/HomeWhy";
 import Landing from "../components/home/Landing";
+import VideoHome from "../components/home/VideoHome";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Landing />
         <HomeAboutUs />
         <HomeWhy />
+        <VideoHome />
       </div>
     </div>
   );
