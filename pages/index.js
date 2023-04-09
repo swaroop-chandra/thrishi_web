@@ -1,8 +1,11 @@
 import Head from "next/head";
+import ClientHome from "../components/home/ClientHome";
 import HomeAboutUs from "../components/home/HomeAboutUs";
 import HomeWhy from "../components/home/HomeWhy";
 import Landing from "../components/home/Landing";
+import ServicesHome from "../components/home/ServicesHome";
 import VideoHome from "../components/home/VideoHome";
+import WorkHome from "../components/home/WorkHome";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
         <HomeAboutUs />
         <HomeWhy />
         <VideoHome />
+        <ServicesHome />
+        <ClientHome />
+        <WorkHome />
       </div>
     </div>
   );
