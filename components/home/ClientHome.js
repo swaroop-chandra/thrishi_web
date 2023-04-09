@@ -3,12 +3,12 @@ import React from "react";
 function ClientHome() {
   return (
     <div>
-      <h1 className="text-4xl h-40 flex items-end justify-center">
+      <h1 className="text-4xl h-40 flex items-end justify-center p-10">
         Our client includes
       </h1>
       <div style={{ contain: "content" }}>
         <div
-          className="mt-8 flex"
+          className="lg:mt-8 flex"
           style={{ position: "relative", zIndex: "-3" }}
         >
           <img

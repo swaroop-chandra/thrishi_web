@@ -4,8 +4,8 @@ import CardsHome from "../common/cards/CardsHome";
 
 function HomeWhy() {
   return (
-    <div className="flex lg:flex-row flex-col h-[46rem] lg:h-screen">
-      <div className="lg:w-1/3 w-full  h-[22rem] lg:h-screem flex items-center justify-center ">
+    <div className="flex lg:flex-row flex-col lg:h-[46rem] lg:h-screen">
+      <div className="lg:w-1/3 lg:h-[22rem]  w-full h-full flex items-center justify-center ">
         <div className="mb-8  lg:mb-0 w-3/4 md:w-4/5 lg:w-3/4">
           <h1 className="text-sm lg:text-lg md:text-base leading-10 mb-6 text-gray-400">
             Why thishi
@@ -25,7 +25,7 @@ function HomeWhy() {
           />
         </div>
       </div>
-      <div className="lg:w-2/3 w-full  h-[22rem] lg:h-screem col  items-center justify-center  w-3/4 md:w-2/3">
+      <div className="lg:w-2/3 w-full h-full lg:h-[22rem] lg:h-screem col  items-center justify-center md:w-2/3">
         <div className="lg:grid grid-rows-3 grid-flow-col gap-x-12 mx-12 ">
           <div className="row-end-3 row-span-2 lg:m-0 mb-12">
             <CardsHome />

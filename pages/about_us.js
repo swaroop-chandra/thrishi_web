@@ -1,4 +1,8 @@
 import Head from "next/head";
+import AboutThishi from "../components/about_us/AboutThishi";
+import Landing from "../components/about_us/Landing";
+import Services from "../components/about_us/Services";
+import WorkCulture from "../components/about_us/WorkCulture";
 
 export default function About() {
   return (
@@ -12,7 +16,10 @@ export default function About() {
         />
       </Head>
       <div>
-        <h1>This is About page</h1>
+        <Landing />
+        <AboutThishi />
+        <WorkCulture />
+        <Services />
       </div>
     </div>
   );

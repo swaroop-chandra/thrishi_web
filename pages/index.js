@@ -1,5 +1,6 @@
 import Head from "next/head";
 import ClientHome from "../components/home/ClientHome";
+import CReviewHome from "../components/home/CReviewHome";
 import HomeAboutUs from "../components/home/HomeAboutUs";
 import HomeWhy from "../components/home/HomeWhy";
 import Landing from "../components/home/Landing";
@@ -23,6 +24,7 @@ export default function Home() {
         <ServicesHome />
         <ClientHome />
         <WorkHome />
+        <CReviewHome />
       </div>
     </div>
   );

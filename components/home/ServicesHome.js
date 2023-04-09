@@ -3,7 +3,7 @@ import LetsTalk from "../common/buttons/LetsTalk";
 
 function ServicesHome() {
   return (
-    <div>
+    <div className="p-10">
       <h1 className="text-4xl h-40 flex items-end justify-center">
         We cater our Services to your needs
       </h1>
@@ -11,15 +11,21 @@ function ServicesHome() {
         <img
           src="/images/home/boxlight.png"
           alt="grey"
-          className="absolute"
+          className="absolute hidden lg:block"
           style={{ right: "35%", marginTop: "35%" }}
         />
       </div>
       <div className="grid lg:grid-cols-2">
-        <img src="/images/home/boxgrey.png" alt="grey" className="p-20" />
-        <div className="p-20 py-30">
-          <h1 className="text-3xl mb-6 mt-20">Event Management</h1>
-          <p className="text-sm mb-12 w-5/6">
+        <img
+          src="/images/home/boxgrey.png"
+          alt="grey"
+          className="p-20 hidden lg:block"
+        />
+        <div className="lg:p-20 lg:py-30">
+          <h1 className="text-3xl lg:mb-6 mb-4 lg:mt-20 mt-12">
+            Event Management
+          </h1>
+          <p className="text-sm mb-12 lg:w-5/6">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only
@@ -36,9 +42,11 @@ function ServicesHome() {
       </div>
 
       <div className="grid lg:grid-cols-2">
-        <div className="p-20 py-30">
-          <h1 className="text-3xl mb-6 mt-20">Digital Marketing</h1>
-          <p className="text-sm mb-12 w-5/6">
+        <div className="lg:p-20 lg:py-30">
+          <h1 className="text-3xl lg:mb-6 mb-4 lg:mt-20 mt-12">
+            Digital Marketing
+          </h1>
+          <p className="text-sm mb-12 lg:w-5/6">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only
@@ -52,7 +60,11 @@ function ServicesHome() {
             size={"18px"}
           />
         </div>
-        <img src="/images/home/boxgrey.png" alt="grey" className="p-20" />
+        <img
+          src="/images/home/boxgrey.png"
+          alt="grey"
+          className="p-20 hidden lg:block"
+        />
       </div>
     </div>
   );
