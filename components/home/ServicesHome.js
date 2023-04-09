@@ -15,7 +15,7 @@ function ServicesHome() {
           style={{ right: "35%", marginTop: "35%" }}
         />
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2">
         <img src="/images/home/boxgrey.png" alt="grey" className="p-20" />
         <div className="p-20 py-30">
           <h1 className="text-3xl mb-6 mt-20">Event Management</h1>
@@ -35,7 +35,7 @@ function ServicesHome() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2">
         <div className="p-20 py-30">
           <h1 className="text-3xl mb-6 mt-20">Digital Marketing</h1>
           <p className="text-sm mb-12 w-5/6">

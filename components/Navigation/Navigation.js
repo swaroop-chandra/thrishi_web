@@ -14,7 +14,7 @@ export default function Navigation() {
 
   return (
     <div
-      className="fixed flex flex-row bg-blend-multiply drop-shadow-md items-center p"
+      className="fixed flex flex-row bg-blend-multiply drop-shadow-md items-center p z-10"
       style={{ background: "#F7F7F7", height: "75px", width: "100vw" }}
     >
       <div className="grow ml-5">
