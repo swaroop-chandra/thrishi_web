@@ -1,5 +1,6 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
+import { motion } from "framer-motion";
 
 function HomeAboutUs() {
   return (
@@ -24,11 +25,17 @@ function HomeAboutUs() {
         </div>
       </div>
       <div className="lg:w-1/2 w-full  h-[22rem] lg:h-screem flex  items-center justify-center  w-3/4 md:w-2/3 m-auto">
-        <img
-          src="/images/home/Group2.png"
-          alt="bg"
-          className="h-48 lg:h-96 md:h-80"
-        />
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src="/images/home/Group2.png"
+            alt="bg"
+            className="h-48 lg:h-96 md:h-80"
+          />
+        </motion.div>
       </div>
     </div>
   );

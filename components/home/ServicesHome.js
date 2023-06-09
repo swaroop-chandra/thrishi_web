@@ -1,5 +1,6 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
+import { motion } from "framer-motion";
 
 function ServicesHome() {
   return (
@@ -16,11 +17,17 @@ function ServicesHome() {
         />
       </div>
       <div className="grid lg:grid-cols-2">
-        <img
-          src="/images/home/boxgrey.png"
-          alt="grey"
-          className="p-20 hidden lg:block"
-        />
+        <motion.div
+          initial={{ x: "100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <img
+            src="/images/home/boxgrey.png"
+            alt="grey"
+            className="p-20 hidden lg:block"
+          />
+        </motion.div>
         <div className="lg:p-20 lg:py-30">
           <h1 className="text-3xl lg:mb-6 mb-4 lg:mt-20 mt-12">
             Event Management
@@ -60,11 +67,17 @@ function ServicesHome() {
             size={"18px"}
           />
         </div>
-        <img
-          src="/images/home/boxgrey.png"
-          alt="grey"
-          className="p-20 hidden lg:block"
-        />
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <img
+            src="/images/home/boxgrey.png"
+            alt="grey"
+            className="p-20 hidden lg:block"
+          />
+        </motion.div>
       </div>
     </div>
   );

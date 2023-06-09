@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Landing from "../components/lets_talk/Landing";
+import Map from "../components/lets_talk/Map";
 
 export default function Contact() {
   return (
@@ -12,7 +14,8 @@ export default function Contact() {
         />
       </Head>
       <div>
-        <h1>This is lets talk page</h1>
+        <Landing />
+        <Map />
       </div>
     </div>
   );

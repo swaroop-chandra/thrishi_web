@@ -1,4 +1,7 @@
 import Head from "next/head";
+import AboutEvent from "../components/services/AboutEvent";
+import GalleryEvent from "../components/services/GalleryEvent";
+import Landing from "../components/services/Landing";
 
 export default function Contact() {
   return (
@@ -11,7 +14,9 @@ export default function Contact() {
         />
       </Head>
       <div>
-        <h1>This is Contact page</h1>
+        <Landing />
+        <AboutEvent />
+        <GalleryEvent />
       </div>
     </div>
   );
