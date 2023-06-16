@@ -1,13 +1,14 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
 import bg from "../../public/images/home/background.jpg";
+import Link from "next/Link";
 
 //style={{ height: "88vh" }}
 function Landing() {
   return (
-    <div className="flex lg:flex-row flex-col h-[44rem] lg:h-screen">
+    <div className="flex lg:flex-row flex-col h-[48rem] lg:h-screen">
       <div
-        className="lg:w-3/5 w-full flex items-center justify-center col-start-1 col-end-4 bg-auto bg-no-repeat bg-center h-[23rem] lg:h-screen"
+        className="lg:w-3/5 w-full flex items-center justify-center col-start-1 col-end-4 bg-auto bg-no-repeat bg-center h-[36rem] lg:h-screen"
         style={{
           backgroundImage: `url(${bg.src})`,
           // width: " 60vw",
@@ -19,14 +20,21 @@ function Landing() {
       >
         <div className="mb-8  lg:mb-0 w-3/4 md:w-4/5 lg:w-3/4">
           <h1 className="text-3xl lg:text-7xl md:text-5xl leading-10 mb-8">
-            Discover the <br /> best place <br /> for <br />{" "}
-            <span>Event Management</span>
+            Unleash. Transform. Streamline.
           </h1>
+
+          <p className="mb-10">
+            Thishi, your one-stop solution for digital marketing and event
+            management. We help boost and elevate your business through our
+            tailored and comprehensive event management and digital marketing
+            services.
+          </p>
           <LetsTalk
             width={"160px"}
             height={"50px"}
-            text={"Let's Talk"}
+            text={"Let's Talks"}
             size={"18px"}
+            link={"/lets_talk"}
           />
         </div>
       </div>
@@ -42,11 +50,6 @@ function Landing() {
         <img
           src="/images/home/Group1.png"
           alt="bg"
-          style={
-            {
-              // height: "65vh",
-            }
-          }
           className="h-64 lg:h-96 md:h-80"
         />
       </div>

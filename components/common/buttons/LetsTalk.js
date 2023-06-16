@@ -1,20 +1,28 @@
+import Link from "next/Link";
+import { useRouter } from "next/router";
 import React from "react";
 
 function LetsTalk(props) {
+  const router = useRouter();
+
   return (
-    <button
-      className="transition p-3 ease-in-out delay-150 text-slate-600 hover:scale-110 duration-300 active:scale-100 active:text-black hover:text-black text-base bg-neutral-200 text-sm rounded flex flex-row items-center justify-self-center active:text-rose-700 active:bg-rose-700"
-      style={{
-        width: props?.width,
-        height: props?.height,
-        fontSize: props?.size,
-      }}
-    >
-      {props.text}
-      <span className="ml-2">
-        <img src="/images/nav/right.png" alt="right" width={30} height={20} />
-      </span>
-    </button>
+    <Link href={`/${props?.link}`}>
+      <button
+        className=" p-3 text-gray-50  text-base bg-black text-sm rounded-full cursor-pointer
+      flex flex-row items-center justify-self-center 	"
+        style={{
+          width: props?.width,
+          height: props?.height,
+          fontSize: props?.size,
+          paddingLeft: "20px",
+        }}
+      >
+        {props.text}
+        <span className="ml-2">
+          <img src="/images/nav/right.png" alt="right" width={25} height={15} />
+        </span>
+      </button>
+    </Link>
   );
 }
 

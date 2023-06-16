@@ -14,14 +14,14 @@ function AboutEvent() {
         About
       </h5>
       <h1 className="lg:text-6xl text-4xl lg:mb-8 mb-4 underline underline-offset-8">
-        Event Management
+        Digital Marketing
       </h1>
       <p className="text-sm lg:w-9/12 lg:text-center mb-12">
-        Thishi, is a full-service event management company offering end-to-end
-        event management solutions. We specialise in crafting unforgettable
-        events that are tailored to suit your needs. Whether you're planning a
-        corporate event, a wedding, or a private party, Thishi Events has you
-        covered.
+        Thishi, your one-stop solution for all digital marketing needs. We offer
+        a range of comprehensive services to help you succeed in the digital
+        landscape. Our team of experts will work with you to create a custom
+        strategy that fits your unique needs and help you reach your business
+        goals.
       </p>
     </div>
   );

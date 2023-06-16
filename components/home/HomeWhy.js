@@ -1,45 +1,101 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
 import CardsHome from "../common/cards/CardsHome";
+import bg from "../../public/images/home/whyBackground.png";
+import { motion } from "framer-motion";
 
 function HomeWhy() {
+  const objectData = [
+    {
+      title: "Attention To Detail ",
+      message:
+        "At Thishi, we strongly believe that the key to delivering top-notch event management and digital marketing services is having meticulous attention to detail. Our team of experienced creators understand the smallest detail and make a significant impact on the success of a campaign to achieve desired results.",
+    },
+    {
+      title: "Innovative Approach",
+      message:
+        "We at Thishi, always approach a task with a fresh and innovative mindset. Thishi’s team of creators and innovators constantly explore new and creative strategies that help us deliver and bring to your brand exceptional results.",
+    },
+    {
+      title: "Seamless Experience",
+      message:
+        "We take great pride in providing a hassle-free and seamless experience. From understanding your brand to delivering to your goals, we work with your brand closely, and keep you informed every step of the way.",
+    },
+    {
+      title: "Empowering Innovators",
+      message:
+        "At Thishi, we strongly believe in empowering innovators, creators and freelancers to unleash their full potential. We understand our creator’s passion and empower them to create a lasting impact on the industry. At Thishi, we highly value creativity, authenticity, innovation, and leadership that helps us provide successful outcomes and achieve their goals.",
+    },
+  ];
   return (
-    <div className="flex lg:flex-row flex-col lg:h-[46rem] lg:h-screen">
-      <div className="lg:w-1/3 lg:h-[22rem]  w-full h-full flex items-center justify-center ">
+    <div
+      className="flex lg:flex-row flex-col lg:min-h-[80rem] lg:h-screen bg-contain	py-40"
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        wordSpacing: "12px",
+      }}
+    >
+      <div className="lg:w-1/3 lg:h-[45rem]  w-full h-full flex items-center justify-center ">
         <div className="mb-8  lg:mb-0 w-3/4 md:w-4/5 lg:w-3/4">
           <h1 className="text-sm lg:text-lg md:text-base leading-10 mb-6 text-gray-400">
             Why thishi
           </h1>
-          <h1 className="text-xl lg:text-5xl md:text-3xl leading-10 mb-10">
+          <h1 className="text-3xl lg:text-8xl md:text-5xl leading-10 mb-10 text-white">
             Why you should <br /> choose us
           </h1>
-          <p className="text-xs lg:text-sm md:text-base text-left mb-8">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-          </p>
-          <LetsTalk
-            width={"160px"}
-            height={"50px"}
-            text={"Know more"}
-            size={"18px"}
-          />
         </div>
       </div>
       <div className="lg:w-2/3 w-full h-full lg:h-[22rem] lg:h-screem col  items-center justify-center md:w-2/3">
         <div className="lg:grid grid-rows-3 grid-flow-col gap-x-12 mx-12 ">
           <div className="row-end-3 row-span-2 lg:m-0 mb-12">
-            <CardsHome />
+            <motion.div
+              initial={{ y: "100vw" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 3 }}
+            >
+              <CardsHome
+                title={objectData[0].title}
+                message={objectData[0].message}
+              />
+            </motion.div>
           </div>
           <div className="row-start-2 row-span-2 lg:m-0 mb-12">
-            <CardsHome />
+            <motion.div
+              initial={{ y: "100vw" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 3 }}
+            >
+              <CardsHome
+                title={objectData[1].title}
+                message={objectData[1].message}
+              />
+            </motion.div>
           </div>
         </div>
         <div className="lg:grid grid-rows-3 grid-flow-col gap-x-12 mx-12">
           <div className="row-end-3 row-span-2 lg:m-0 mb-12">
-            <CardsHome />
+            <motion.div
+              initial={{ y: "100vw" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 5 }}
+            >
+              <CardsHome
+                title={objectData[2].title}
+                message={objectData[2].message}
+              />
+            </motion.div>
           </div>
           <div className="row-start-2 row-span-2 lg:m-0 mb-12">
-            <CardsHome />
+            <motion.div
+              initial={{ y: "100vw" }}
+              animate={{ y: 0 }}
+              transition={{ duration: 5 }}
+            >
+              <CardsHome
+                title={objectData[3].title}
+                message={objectData[3].message}
+              />
+            </motion.div>
           </div>
         </div>
       </div>

@@ -8,8 +8,8 @@ function VideoHome() {
         Event management & Digital marketing
       </h3>
       <p className="m-0 text-sm text-gray-700 lg:w-[33rem] lg:text-center my-6">
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and{" "}
+        Unleash your brand's potential with Thishi's digital marketing and event
+        management services.
       </p>
       <div className="flex justify-center">
         <img

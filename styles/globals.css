@@ -50,3 +50,7 @@ button {
   opacity: 1;
   /* Firefox */
 }
+
+.carousel .thumbs-wrapper {
+  display: none;
+}

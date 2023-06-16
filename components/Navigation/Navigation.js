@@ -5,9 +5,30 @@ import { useRouter } from "next/router";
 import { MenuItems } from "./NavContent";
 import LetsTalk from "../common/buttons/LetsTalk";
 
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
+
 export default function Navigation() {
   const [navClick, setNavClick] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [dropdown, setDropdown] = useState(true);
   const router = useRouter();
   console.log(navClick);
   // document.title = `Thishi | ${router.pathname}`;
@@ -54,10 +75,50 @@ export default function Navigation() {
           );
         })}
         <li>
+          <button
+            id="dropdownDefaultButton"
+            data-dropdown-toggle="dropdown"
+            type="button"
+            onClick={() => setDropdown(!dropdown)}
+          >
+            Services
+          </button>
+          <div
+            id="dropdown"
+            className={`absolute mt-5 z-10 bg-neutral-50 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-neutral-50 ${
+              dropdown && "hidden"
+            }`}
+          >
+            <ul
+              className="py-2 text-sm text-black dark:text-black"
+              aria-labelledby="dropdownDefaultButton"
+            >
+              <li>
+                <a
+                  href="event_management"
+                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-black"
+                  onClick={() => setDropdown(!dropdown)}
+                >
+                  Event Management
+                </a>
+              </li>
+              <li>
+                <a
+                  href="digital_marketing"
+                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-black"
+                  onClick={() => setDropdown(!dropdown)}
+                >
+                  Digital Marketing
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
           <Link href="/lets_talk">
             <button
-              className="transition p-3 ease-in-out delay-150 text-slate-600 hover:scale-110 duration-300 active:scale-100 active:text-black hover:text-black text-base bg-neutral-200 text-sm rounded flex flex-row items-center justify-self-center active:text-rose-700 active:bg-rose-700"
-              style={{ width: "145px", height: "32px" }}
+              className="transition p-3 ease-in-out delay-150 text-slate-600 hover:scale-110 duration-300 active:scale-100 active:text-black hover:text-white text-white bg-black text-sm rounded-full flex flex-row items-center justify-self-center active:text-rose-700 active:bg-rose-700"
+              style={{ width: "145px", height: "32px", paddingLeft: "20px" }}
             >
               Let’s Talk
               <span className="ml-2">
