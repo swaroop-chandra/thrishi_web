@@ -1,7 +1,7 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
 import bg from "../../public/images/home/background.jpg";
-import Link from "next/Link";
+import Link from "next/link";
 
 //style={{ height: "88vh" }}
 function Landing() {

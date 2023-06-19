@@ -1,5 +1,5 @@
 import styles from "../../styles/Navigation.module.css";
-import Link from "next/Link";
+import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { MenuItems } from "./NavContent";
