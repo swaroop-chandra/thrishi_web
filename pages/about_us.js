@@ -19,7 +19,7 @@ export default function About() {
         <Landing />
         <AboutThishi />
         <WorkCulture />
-        <Services />
+        {/* <Services /> */}
       </div>
     </div>
   );

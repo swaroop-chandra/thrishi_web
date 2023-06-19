@@ -40,7 +40,7 @@ function HomeAboutUs() {
           viewport={{ once: true }}
         >
           <img
-            src="/images/home/Group2.png"
+            src="/images/home/Group2.jpg"
             alt="bg"
             className="h-48 lg:h-[30rem] md:h-80"
           />

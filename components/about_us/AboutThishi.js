@@ -33,7 +33,7 @@ function AboutThishi() {
         </div>
       </div>
       <div className="lg:w-1/2 w-full lg:h-[22rem] h-full flex  items-center justify-center md:w-2/3 m-auto lg:p-20 p-10">
-        <img src="/images/home/boxgrey.png" alt="grey" className="lg:p-20" />
+        <img src="/images/about_us/about.jpg" alt="grey" className="lg:p-20" />
       </div>
     </div>
   );

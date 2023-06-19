@@ -30,8 +30,8 @@ function Landing() {
         dynamicHeight={true}
       >
         <div>
-          <img src={"/images/services/bg.png"} />
-          <p
+          <img src={"/images/services/bg1.jpg"} />
+          {/* <p
             className="absolute lg:text-6xl md:text-4xl"
             style={{
               height: "60%",
@@ -46,11 +46,11 @@ function Landing() {
             }}
           >
             It’s time to take your business to the next-level digitally.
-          </p>
+          </p> */}
         </div>
         <div>
-          <img src={"/images/services/bg.png"} />
-          <p
+          <img src={"/images/services/bg2.jpg"} />
+          {/* <p
             className="absolute lg:text-6xl md:text-4xl"
             style={{
               height: "60%",
@@ -66,7 +66,7 @@ function Landing() {
           >
             Drive growth and revenue in the online world, with Thishi’s digital
             marketing services.
-          </p>
+          </p> */}
         </div>
         {/* <div>
           <img src={"/images/services/bg.png"} />

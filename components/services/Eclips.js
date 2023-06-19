@@ -4,8 +4,14 @@ import logo1 from "../../public/images/services/block1.png";
 import logo2 from "../../public/images/services/block2.png";
 import LetsTalk from "../common/buttons/LetsTalk";
 import EclipsCard from "../common/cards/EclipsCard";
+import { useRouter } from "next/router";
 
 function Eclips() {
+  const router = useRouter();
+  const pathname = router.pathname.slice(1);
+
+  const digitalTitle = "Our Digital Marketing Services";
+  const eventTitle = "Our Event Management Services";
   const ObjectData = [
     {
       logo: logo1,
@@ -26,6 +32,26 @@ function Eclips() {
         "With our deep expertise in hosting live events, we have an equally experienced digital marketing team that can promote your event through customised campaigns  social media, web, and other digital channels.       ",
     },
   ];
+  const ObjectData1 = [
+    {
+      logo: logo1,
+      title: "Search Engine Optimization (SEO)",
+      message:
+        "SEO is the process of optimising your website to rank higher in search engine results pages (SERPs). Our team of experts will conduct a thorough analysis of your website and create a custom strategy to improve your rankings and drive more traffic to your site.",
+    },
+    {
+      logo: logo2,
+      title: "Social Media Marketing (SMM)",
+      message:
+        "Social media platforms offer a unique opportunity to connect with your target audience and build brand awareness. Our team of experts will create and manage your social media accounts, creating engaging content and targeted campaigns to help you reach your business goals.",
+    },
+    {
+      logo: logo1,
+      title: "Web Design and Development",
+      message:
+        "Your website is often the first impression that potential customers have of your business. Our team of experts will create a custom website that is visually appealing, user-friendly, and optimised for maximum conversions.",
+    },
+  ];
 
   return (
     <div
@@ -37,23 +63,61 @@ function Eclips() {
     >
       <h1 className="lg:text-7xl text-4xl mb-6 w-6/12 text-white sticky top-0 mt-2/3">
         <div className="m-52"></div>
-        <p>sample</p>
+        <p className="w-8/12 leading-relaxed">
+          {pathname == "digital_marketing" ? digitalTitle : eventTitle}
+        </p>
       </h1>
       <div className="w-6/12 flex flex-col justify-between h-full ">
         <EclipsCard
-          imag={ObjectData[0].logo}
-          title={ObjectData[0].title}
-          message={ObjectData[0].message}
+          imag={
+            pathname == "digital_marketing"
+              ? ObjectData1[0].logo
+              : ObjectData[0].logo
+          }
+          title={
+            pathname == "digital_marketing"
+              ? ObjectData1[0].title
+              : ObjectData[0].title
+          }
+          message={
+            pathname == "digital_marketing"
+              ? ObjectData1[0].message
+              : ObjectData[0].message
+          }
         />
         <EclipsCard
-          imag={ObjectData[1].logo}
-          title={ObjectData[1].title}
-          message={ObjectData[1].message}
+          imag={
+            pathname == "digital_marketing"
+              ? ObjectData1[1].logo
+              : ObjectData[1].logo
+          }
+          title={
+            pathname == "digital_marketing"
+              ? ObjectData1[1].title
+              : ObjectData[1].title
+          }
+          message={
+            pathname == "digital_marketing"
+              ? ObjectData1[1].message
+              : ObjectData[1].message
+          }
         />
         <EclipsCard
-          imag={ObjectData[2].logo}
-          title={ObjectData[2].title}
-          message={ObjectData[2].message}
+          imag={
+            pathname == "digital_marketing"
+              ? ObjectData1[2].logo
+              : ObjectData[2].logo
+          }
+          title={
+            pathname == "digital_marketing"
+              ? ObjectData1[2].title
+              : ObjectData[2].title
+          }
+          message={
+            pathname == "digital_marketing"
+              ? ObjectData1[2].message
+              : ObjectData[2].message
+          }
         />
       </div>
     </div>

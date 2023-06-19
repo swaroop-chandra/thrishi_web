@@ -8,14 +8,14 @@ function ServicesHome() {
       <h1 className="text-4xl h-40 flex items-end justify-center">
         What We Do?
       </h1>
-      <div>
+      {/* <div>
         <img
           src="/images/home/boxlight.png"
           alt="grey"
           className="absolute hidden lg:block"
           style={{ right: "35%", marginTop: "35%" }}
         />
-      </div>
+      </div> */}
       <div className="grid lg:grid-cols-2">
         <motion.div
           initial={{ x: "100vw" }}
@@ -23,9 +23,9 @@ function ServicesHome() {
           transition={{ duration: 3 }}
         >
           <img
-            src="/images/home/boxgrey.png"
+            src="/images/home/event.jpg"
             alt="grey"
-            className="p-20 hidden lg:block"
+            className="p-20 hidden lg:block rounded"
           />
         </motion.div>
         <div className="lg:p-20 lg:py-30">
@@ -85,9 +85,9 @@ function ServicesHome() {
           transition={{ duration: 5 }}
         >
           <img
-            src="/images/home/boxgrey.png"
+            src="/images/home/digital.jpg"
             alt="grey"
-            className="p-20 hidden lg:block"
+            className="p-20 hidden lg:block rounded"
           />
         </motion.div>
       </div>
