@@ -8,27 +8,27 @@ function HomeWhy() {
   const objectData = [
     {
       title: "Attention To Detail ",
-      logo: "attent.svg",
+      logo: "attent.jpeg",
       message:
         "At Thishi, we strongly believe that the key to delivering top-notch event management and digital marketing services is having meticulous attention to detail. Our team of experienced creators understand the smallest detail and make a significant impact on the success of a campaign to achieve desired results.",
     },
     {
       title: "Innovative Approach",
-      logo: "innovating.svg",
+      logo: "innovating.jpeg",
 
       message:
         "We at Thishi, always approach a task with a fresh and innovative mindset. Thishi’s team of creators and innovators constantly explore new and creative strategies that help us deliver and bring to your brand exceptional results.",
     },
     {
       title: "Seamless Experience",
-      logo: "seamless.svg",
+      logo: "seamless.jpeg",
 
       message:
         "We take great pride in providing a hassle-free and seamless experience. From understanding your brand to delivering to your goals, we work with your brand closely, and keep you informed every step of the way.",
     },
     {
       title: "Empowering Innovators",
-      logo: "empower.svg",
+      logo: "empower.jpeg",
 
       message:
         "At Thishi, we strongly believe in empowering innovators, creators and freelancers to unleash their full potential. We understand our creator’s passion and empower them to create a lasting impact on the industry. At Thishi, we highly value creativity, authenticity, innovation, and leadership that helps us provide successful outcomes and achieve their goals.",
