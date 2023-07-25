@@ -23,7 +23,7 @@ function ServicesHome() {
           transition={{ duration: 3 }}
         >
           <img
-            src="/images/home/event.jpg"
+            src="/images/home/event.jpeg"
             alt="grey"
             className="p-20 hidden lg:block rounded"
           />
@@ -85,7 +85,7 @@ function ServicesHome() {
           transition={{ duration: 5 }}
         >
           <img
-            src="/images/home/digital.jpg"
+            src="/images/home/digital.jpeg"
             alt="grey"
             className="p-20 hidden lg:block rounded"
           />
