@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import bg from "../../public/images/services/bg.png";
+import bg from "../../public/images/services/bg.jpeg";
 import LetsTalk from "../common/buttons/LetsTalk";
 
 function Landing() {

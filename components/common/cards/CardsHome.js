@@ -6,7 +6,11 @@ function CardsHome({ title, message, logo }) {
       <div className="grid-flow-col">
         <div className="flex gap-3 items-center">
           <div className="rounded-full bg-gray-300 w-12 h-12 mb-4">
-            <img src={!logo ? "" : `/images/home/${logo}`} alt="" />
+            <img
+              src={!logo ? "" : `/images/home/${logo}`}
+              alt="logo"
+              style={{ borderRadius: "50%", padding: "3px" }}
+            />
           </div>
           <div className="text-xl font-semibold mb-4">{title}</div>
         </div>
