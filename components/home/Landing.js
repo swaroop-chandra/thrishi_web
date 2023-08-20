@@ -1,7 +1,7 @@
 import React from "react";
 import LetsTalk from "../common/buttons/LetsTalk";
 import bg from "../../public/images/home/background.jpg";
-import bg1 from "../../public/images/home/background.jpeg";
+import bg1 from "../../public/images/home/digital.png";
 import Link from "next/link";
 
 //style={{ height: "88vh" }}
@@ -11,7 +11,7 @@ function Landing() {
       <div
         className=" w-full flex items-center col-start-1 col-end-4 bg-auto bg-no-repeat bg-center h-[36rem] lg:h-screen lg:ps-20"
         style={{
-          backgroundImage: `url(${bg1.src})`,
+          // backgroundImage: `url(${bg1.src})`,
           // width: " 60vw",
           // height: "75vh",
           wordSpacing: "12px",
@@ -19,7 +19,8 @@ function Landing() {
           zIndex: "-3",
         }}
       >
-        <div className=" lg:w-1/2">
+        {/* <div className=" lg:w-1/2"> */}
+        <div className="ms-12 lg:ms-0">
           <div className="mb-8  lg:mb-0 w-3/4 md:w-4/5 lg:w-3/4">
             <h1 className="text-3xl lg:text-7xl md:text-5xl leading-10 mb-8">
               Unleash. Transform. Streamline.
@@ -40,6 +41,9 @@ function Landing() {
             />
           </div>
         </div>
+      </div>
+      <div style={{ float: "right", marginTop: "3rem" }}>
+        <img src="/images/home/sideHome.png" alt="brand" />
       </div>
       {/* <div
         className="lg:w-2/5 flex  items-center justify-center  w-full col-start-4 col-end-7 bg-no-repeat bg-center h-[25rem] lg:h-screen"

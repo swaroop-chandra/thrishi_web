@@ -30,7 +30,8 @@ export default function Navigation() {
   const [toggle, setToggle] = useState(false);
   const [dropdown, setDropdown] = useState(true);
   const router = useRouter();
-  console.log(navClick);
+  const route_data = router.pathname.slice(1).split("_").join(" ");
+  console.log();
   // document.title = `Thishi | ${router.pathname}`;
 
   return (
@@ -170,8 +171,8 @@ export default function Navigation() {
                       setNavClick(index);
                     }}
                     style={
-                      MenuItems.findIndex((e) => e.url == router.pathname) ==
-                        index || navClick == index
+                      route_data == item.title.toLowerCase() ??
+                      "home" == item.title.toLowerCase()
                         ? {
                             fontSize: "18px",
                             color: "black",
@@ -182,12 +183,47 @@ export default function Navigation() {
                     <button
                       className={`transition p-3 ease-in-out delay-150  duration-300  `}
                     >
+                      {console.log(route_data)}
                       {item.title}
                     </button>
                   </Link>
                 </li>
               );
             })}
+            <li className="pt-4">
+              <a
+                href="event_management"
+                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-black"
+                onClick={() => setDropdown(!dropdown)}
+                style={
+                  route_data == "event management"
+                    ? {
+                        fontSize: "18px",
+                        color: "black",
+                      }
+                    : { fontSize: "16px", opacity: "0.5" }
+                }
+              >
+                Event Management
+              </a>
+            </li>
+            <li className="pt-4">
+              <a
+                href="digital_marketing"
+                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-black"
+                onClick={() => setDropdown(!dropdown)}
+                style={
+                  route_data == "digital marketing"
+                    ? {
+                        fontSize: "18px",
+                        color: "black",
+                      }
+                    : { fontSize: "16px", opacity: "0.5" }
+                }
+              >
+                Digital Marketing
+              </a>
+            </li>
             <li className="pt-4">
               <Link href="/lets_talk">
                 <LetsTalk width={"145px"} height={"32px"} text={"Let's Talk"} />
